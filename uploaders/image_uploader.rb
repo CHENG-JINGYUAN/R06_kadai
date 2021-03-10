@@ -13,7 +13,7 @@ class ImageUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
   def extension_allowlist
-    %w(jpg jpeg gif png)
+    %w(jpg jpeg png)
   end
   def size_range
     0..10.megabytes
